@@ -1,50 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Cinzel&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a1a;
+    font-family: 'Merriweather', serif;
     color: #ddd;
+    background: url('https://github.com/ab1021u/Simple-Website/raw/main/RS%20Image1.webp') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 header, section, footer {
-    margin: 20px;
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 8px;
     padding: 20px;
-    background-color: #333;
-    border: 1px solid #444;
+    margin: 20px;
+    border: 1px solid gold;
+    box-shadow: 0 0 20px #ffd700;
+    transition: transform 0.3s ease-in-out;
 }
 
-header h1 {
+header h1, h2 {
+    font-family: 'Cinzel', serif;
     color: gold;
+    text-shadow: 2px 2px 4px #000;
+}
+
+nav {
+    background: transparent;
+    text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    background-color: #444;
-    padding: 10px;
-    text-align: center;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: lightblue;
+    font-size: 18px;
     text-decoration: none;
     font-weight: bold;
+    background-color: rgba(68, 68, 68, 0.8);
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: gold;
+    background-color: rgba(68, 68, 68, 1);
+    cursor: pointer;
 }
 
 a {
     color: lightgreen;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: gold;
 }
 
 img {
-    width: 100%; /* Adjust this as necessary */
-    padding: 10px 0;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    color: #aaa;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px;
+    border-radius: 8px;
 }

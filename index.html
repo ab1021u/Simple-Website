@@ -17,7 +17,12 @@
             <li><a href="#contact">Connect</a></li>
         </ul>
     </nav>
-    <div class="background-image">
+    <div class="background-video">
+        <video autoplay muted loop id="myVideo">
+            <source src="https://www.videvo.net/videvo_files/converted/2016_01/preview/160108C_057_HD_1080p.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="content">
         <section id="home">
             <h2>Discover Gielinor's Riches</h2>
             <p>Embark on a journey through the expansive realms of Gielinor, where adventure and mystery await every daring explorer.</p>
@@ -39,5 +44,22 @@
     <footer>
         <p>Thank you for exploring the world of RuneScape 3 with us.</p>
     </footer>
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // JavaScript for parallax effect
+        window.addEventListener('scroll', function() {
+            const scrolled = window.scrollY;
+            document.querySelector('.background-video').style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+    </script>
 </body>
 </html>

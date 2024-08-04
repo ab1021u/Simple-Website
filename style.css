@@ -3,24 +3,24 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1a1a1a;
+    color: #ddd;
 }
 
 header, section, footer {
     margin: 20px;
     padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #333;
+    border: 1px solid #444;
 }
 
 header h1 {
-    color: darkcyan;
+    color: gold;
 }
 
 nav ul {
     list-style-type: none;
-    background-color: darkcyan;
+    background-color: #444;
     padding: 10px;
     text-align: center;
 }
@@ -31,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: lightblue;
     text-decoration: none;
     font-weight: bold;
 }
@@ -41,5 +41,10 @@ a:hover {
 }
 
 a {
-    color: #06c;
+    color: lightgreen;
+}
+
+img {
+    width: 100%; /* Adjust this as necessary */
+    padding: 10px 0;
 }

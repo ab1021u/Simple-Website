@@ -64,14 +64,29 @@ a:hover {
     color: gold;
 }
 
+/* Keyframes for fading in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Keyframes for scaling up */
+@keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+/* Applying animations to gallery images */
 img {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out, scaleUp 0.5s ease-in-out;
 }
 
-img:hover {
-    transform: scale(1.1);
+/* Applying fade-in animation to sections */
+section {
+    animation: fadeIn 2s;
 }
 
 footer {
